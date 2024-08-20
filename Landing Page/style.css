@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 * {
     padding : 0;
     margin : 0;
@@ -25,6 +27,7 @@ header{
     background-position: center;
     padding: 10px 8%;
     position: relative;
+    
 }
 
 nav{
@@ -159,6 +162,11 @@ header {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.signup_button::after{
+    content: '';
+    display: none;
+    font-size: 16px;
+}
 
 /* Features */
 
@@ -189,9 +197,6 @@ header {
     margin: auto;
     border-radius: 20% 0px 30% 0px;
 }
-
-
-
 
 .features h2{
     font-size:50px;
@@ -249,7 +254,8 @@ hr{
 
 .features .img-col img:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
+    filter: brightness(1.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 
@@ -330,42 +336,7 @@ section .email_signup{
     margin: 20px auto 60px;
 }
 
-footer{
-    padding: 50px 15% 10px;
-    color: #777;
-}
-
-footer h2{
-    font-size : 18px;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-footer .col{
-    flex-basis: 25%;
-    flex-grow: 1;
-    margin-bottom: 20px;
-}
-
-footer .col a{
-    display: block;
-    color: #777;
-    text-decoration: none;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-footer .row{
-    align-items: flex-start;
-    padding: 10px 0;
-}
-
-.copyright-text{
-    font-size: 14px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    align-items: center;
-}
+    
 
 /* Media Queries */
 
@@ -398,11 +369,19 @@ footer .row{
 
     .header-content h1{
         font-size: 30px;
+        
     }
 
-    .email_signup button{
-        font-size: 12px;
-        padding: 10px 15px;
+    .signup_button{
+        padding: 10px;
+        font-size: 0;
+    }
+
+    .signup_button::after{
+        content: "→";
+        display: inline;
+        font-size: 22px;
+        font-weight: 600;
     }
 
     .text-col, .img-col{
