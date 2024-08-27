@@ -45,7 +45,7 @@ nav{
 nav button{
     border : 0;
     outline : 0;
-    background: red;
+    background: rgb(219,26,40);
     color : white;
     padding : 10px 20px;
     font-size: 16px;
@@ -149,7 +149,7 @@ header {
 
 
 .signup_button {
-    background: red;
+    background: rgb(219,26,40);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -334,6 +334,23 @@ input[type="radio"]{
 section .email_signup{
     max-width: 600px;
     margin: 20px auto 60px;
+}
+
+
+/* Footer */
+
+footer{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+.copyright-text{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    align-items: center;
+    color: #888;
 }
 
     
