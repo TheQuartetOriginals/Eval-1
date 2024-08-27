@@ -1,0 +1,78 @@
+body{
+    background-image: 
+    url("https://images.unsplash.com/photo-1484415063229-3d6335668531?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.login-top{
+    width: 100vw;
+    background-color: transparent;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 80px; 
+}
+
+.login-top img{
+    width: 200px;
+}
+
+.login-box{
+    background-color: rgb(0, 0, 0);
+    width: 430px;
+    height: px;
+    padding: 50px;
+}
+
+.small-text{
+    font-size: 15px;
+}
+
+
+.forgot-pass{
+    color: white;
+    text-decoration: none;
+}
+
+.forgot-pass:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.sign-in{
+    font-size: 35px;
+}
+
+.sign-in-btn{
+    background-color: red !important;
+    font-weight: 700 !important;
+    opacity: 0.8;
+    cursor : pointer;
+}
+
+
+.alternative-sign-in{
+    background-color: red !important;
+    color: #fff;
+}
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.copyright-text{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    align-items: center;
+    color: #888;
+}
+
