@@ -65,6 +65,20 @@
       margin-bottom: 10px;
     }
 
+    /* Cards Section */
+
+    .card{
+          max-width: 80%;
+          margin-bottom: 50px;
+
+    }
+
+    .card-section .row h2{
+          font-size: 2rem;
+          font-weight: bold;
+          text-align: center;
+    
+    }
 
 
 }
