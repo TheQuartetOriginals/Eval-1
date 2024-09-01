@@ -88,7 +88,8 @@
       background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7));
   }
   
-
+  
+  
   .swiper-slide .image .black h1{
       font-size: 30px;
       text-align: left;
@@ -176,6 +177,73 @@
   .swiper {
       margin-left: auto;
       margin-right: auto;
+  }
+  
+  
+  /* Card Section */
+  
+  .card-section {
+      padding: 50px 0;
+      background-color: #171717;
+  }
+  
+  .card-section .row h2{
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card {
+      position: relative;
+      overflow: hidden;
+      border: 4px solid red !important;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      width: 100%;
+      max-width: 300px; 
+      height: auto; 
+      transition: 0.3s;
+      margin: 0 auto; 
+  }
+  
+  .card:hover{
+      transform: scale(1.1);
+  }
+  
+  .card-img-top {
+      border-radius: 8px 8px 0 0;
+  }
+  
+  .card-body {
+      position: absolute;
+      color: white; 
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .card:hover .card-body {
+      opacity: 1;
+  }
+  
+  
+  
+  .card-body a{
+      position: absolute;
+      top: 80%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      color: red;
+      opacity: 0.8;
+      transition: opacity 0.3s;
   }
   
   
